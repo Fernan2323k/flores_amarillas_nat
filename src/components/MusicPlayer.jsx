@@ -90,7 +90,7 @@ export default function MusicPlayer({ started }) {
       >
         <SpeakerIcon muted={muted} />
       </button>
-      <audio ref={audioRef} src="/assets/musica.mp3" loop preload="auto" onError={() => setAvailable(false)} />
+      <audio ref={audioRef} src={`${import.meta.env.BASE_URL}assets/musica.mp3`} loop preload="auto" onError={() => setAvailable(false)} />
     </div>
   )
 }
